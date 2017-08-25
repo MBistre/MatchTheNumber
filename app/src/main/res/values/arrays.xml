@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="genderValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="readySetGo">
+        <item>READY!</item>
+        <item>SET!</item>
+        <item>GO!</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>#ff0000</item>
+        <item>#00ff00</item>
+        <item>#0000ff</item>
+        <item>#ffff00</item>
+    </string-array>
+
+</resources>

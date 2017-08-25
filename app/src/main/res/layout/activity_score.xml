@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.marijanbistre.algebrafinalapplication.ScoreActivity">
+
+    <TextView
+        android:id="@+id/tvCongratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/congratulation"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHighscoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/newHighscore"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCongratulation"
+        app:layout_constraintHorizontal_bias="0.535" />
+
+    <TextView
+        android:id="@+id/tvNewHighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/highscore"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCongratulation"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNewHighscore"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintLeft_toRightOf="@+id/tvNewHighscore"
+        app:layout_constraintRight_toRightOf="@+id/tvCongratulation"
+        app:layout_constraintTop_toTopOf="@+id/tvNewHighscore" />
+
+    <TextView
+        android:id="@+id/tvScoreList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvScoreList"
+        app:layout_constraintLeft_toRightOf="@+id/tvScoreList"
+        app:layout_constraintTop_toTopOf="@+id/tvScoreList" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_restore_white_24dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvHighscoreText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/ibRestart" />
+
+    <ImageButton
+        android:id="@+id/ibHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_home_white_24dp"
+        app:layout_constraintLeft_toRightOf="@+id/ibRestart"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/ibScore"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toTopOf="@+id/ibRestart"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintBottom_toBottomOf="@+id/ibRestart"
+        android:layout_marginBottom="0dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_view_list_white_24dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/tvHighscoreText"
+        android:id="@+id/ibScore"
+        app:layout_constraintTop_toTopOf="@+id/ibHome"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ibHome"
+        android:layout_marginBottom="0dp" />
+
+</android.support.constraint.ConstraintLayout>

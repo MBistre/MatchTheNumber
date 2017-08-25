@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="hr.marijanbistre.algebrafinalapplication.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_perm_identity_white_24dp"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        android:title="Close"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_mute"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_volume_up_white_24dp"
+        android:title="Mute"
+        app:showAsAction="always" />
+</menu>
